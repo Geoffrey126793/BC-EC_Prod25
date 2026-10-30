@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="nl-BE" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 258455840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment Lines</source>
+          <target>Geboekte verkoopverzendregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the shipment number.</source>
+          <target>Hiermee wordt het verzendnummer opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the customer.</source>
+          <target>Hiermee wordt het nummer van de klant opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Sell-to Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line type.</source>
+          <target>Hiermee wordt het regelsoort opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the involved entry or record, according to the specified number series.</source>
+          <target>Hiermee wordt het nummer opgegeven van de betrokken post of record, volgens de opgegeven nummerreeks.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <target>Hiermee wordt de variant opgegeven van het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or general ledger account, or some descriptive text.</source>
+          <target>Hiermee wordt de naam van de artikel- of grootboekrekening, of omschrijvende tekst opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 1, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 1. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Shortcut Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 2, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 2. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Shortcut Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the location of the item on the shipment line which was posted.</source>
+          <target>Hiermee wordt de code opgegeven voor de locatie van het artikel op de verzendregel die is geboekt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item specified on the line.</source>
+          <target>Hiermee wordt het aantal eenheden opgegeven van het artikel dat op de regel wordt opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 2385270358 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.</source>
+          <target>Hiermee wordt opgegeven hoe elke eenheid van het artikel of de resource wordt gemeten, bijvoorbeeld in stuks of uur. Standaard wordt de waarde in het veld Basiseenheid op de artikel- of resourcekaart ingevoegd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Unit of Measure Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or resource's unit of measure, such as piece or hour.</source>
+          <target>Hiermee wordt naam opgegeven van de maateenheid van het artikel of de resource, zoals stuk of uur.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 3244334840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item ledger entry that the document or journal line is applied to.</source>
+          <target>Hiermee wordt het nummer opgegeven van de artikelpost waarmee het document of de dagboekregel wordt vereffend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Appl.-to Item Entry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related job.</source>
+          <target>Hiermee wordt het nummer van het gerelateerde project opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 4112852368 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when items on the document are shipped or were shipped. A shipment date is usually calculated from a requested delivery date plus lead time.</source>
+          <target>Hiermee wordt opgegeven wanneer artikelen in het document worden of zijn verzonden. Een verzenddatum wordt gewoonlijk berekend op basis van een aangevraagde leverdatum plus doorlooptijd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Shipment Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Control 61616130 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item on the line have been posted as invoiced.</source>
+          <target>Hiermee wordt opgegeven hoeveel eenheden van het artikel op de regel zijn geboekt als gefactureerd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Control Quantity Invoiced - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>&amp;Regel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 1107476520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Document</source>
+          <target>Document weergeven</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Show Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 1107476520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the document that the selected line exists on.</source>
+          <target>Het document openen waarin de geselecteerde regel zich bevindt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Show Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensies</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.</source>
+          <target>Dimensies, zoals gebied, project of afdeling, weergeven of bewerken die u kunt toewijzen aan verkoop- en inkoopdocumenten om de kosten te verdelen en de transactiegeschiedenis te analyseren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Dimensions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 1621753147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Lines</source>
+          <target>Artikel&amp;traceringsregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Item &amp;Tracking Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 258455840 - Action 1621753147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit serial numbers and lot numbers that are assigned to the item on the document or journal line.</source>
+          <target>Serienummers en lotnummers weergeven of bewerken die zijn toegewezen aan het artikel op de document- of dagboekregel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Shipment Lines - Action Item &amp;Tracking Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Invoice Lines</source>
+          <target>Geboekte verkoopfactuurregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number.</source>
+          <target>Hiermee wordt het documentnummer opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the customer.</source>
+          <target>Hiermee wordt het nummer van de klant opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Sell-to Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line type.</source>
+          <target>Hiermee wordt het regelsoort opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the involved entry or record, according to the specified number series.</source>
+          <target>Hiermee wordt het nummer opgegeven van de betrokken post of record, volgens de opgegeven nummerreeks.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <target>Hiermee wordt de variant opgegeven van het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or general ledger account, or some descriptive text.</source>
+          <target>Hiermee wordt de naam van de artikel- of grootboekrekening, of omschrijvende tekst opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 1, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 1. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Shortcut Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 2, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 2. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Shortcut Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item specified on the line.</source>
+          <target>Hiermee wordt het aantal eenheden opgegeven van het artikel dat op de regel wordt opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 2385270358 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.</source>
+          <target>Hiermee wordt opgegeven hoe elke eenheid van het artikel of de resource wordt gemeten, bijvoorbeeld in stuks of uur. Standaard wordt de waarde in het veld Basiseenheid op de artikel- of resourcekaart ingevoegd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Unit of Measure Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or resource's unit of measure, such as piece or hour.</source>
+          <target>Hiermee wordt naam opgegeven van de maateenheid van het artikel of de resource, zoals stuk of uur.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the price of one unit of the item or resource. You can enter a price manually or have it entered according to the Price/Profit Calculation field on the related card.</source>
+          <target>Hiermee wordt de prijs weergegeven van één eenheid van het artikel of de resource. U kunt handmatig een prijs invoeren of een prijs laten invoeren op basis van het veld Prijs/Winst berekenen op de gerelateerde kaart.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 68186622 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the cost, in LCY, of one unit of the item or resource on the line.</source>
+          <target>Hiermee worden de kosten van één eenheid van het artikel of de resource op de regel weergegeven in de lokale valuta.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Unit Cost (LCY) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line's net amount.</source>
+          <target>Hiermee wordt het nettobedrag van de regel opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1650118938 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the net amount, including VAT, for this line.</source>
+          <target>Hiermee wordt het nettobedrag, inclusief btw, voor deze regel opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Amount Including VAT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 2702998682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the discount percentage that is granted for the item on the line.</source>
+          <target>Hiermee wordt het regelkortingspercentage opgegeven dat voor het artikel op de regel wordt verleend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Line Discount % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1206454073 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the discount amount that is granted for the item on the line.</source>
+          <target>Hiermee wordt het kortingsbedrag opgegeven dat wordt verleend voor het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Line Discount Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 3222158277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the invoice line is included when the invoice discount is calculated.</source>
+          <target>Hiermee wordt opgegeven of de factuurregel wordt opgenomen wanneer de factuurkorting wordt berekend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Allow Invoice Disc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 907522666 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the total calculated invoice discount amount for the line.</source>
+          <target>Hiermee wordt het totale berekende factuurkortingsbedrag opgegeven voor de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Inv. Discount Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 3244334840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item ledger entry that the document or journal line is applied to.</source>
+          <target>Hiermee wordt het nummer opgegeven van de artikelpost waarmee het document of de dagboekregel wordt vereffend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Appl.-to Item Entry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related job.</source>
+          <target>Hiermee wordt het nummer van het gerelateerde project opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>&amp;Regel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 1107476520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Document</source>
+          <target>Document weergeven</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Show Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 1107476520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the document that the selected line exists on.</source>
+          <target>Het document openen waarin de geselecteerde regel zich bevindt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Show Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensies</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.</source>
+          <target>Dimensies, zoals gebied, project of afdeling, weergeven of bewerken die u kunt toewijzen aan verkoop- en inkoopdocumenten om de kosten te verdelen en de transactiegeschiedenis te analyseren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Dimensions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 1621753147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Lines</source>
+          <target>Artikel&amp;traceringsregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Item &amp;Tracking Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1298119151 - Action 1621753147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit serial numbers and lot numbers that are assigned to the item on the document or journal line.</source>
+          <target>Serienummers en lotnummers weergeven of bewerken die zijn toegewezen aan het artikel op de document- of dagboekregel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Invoice Lines - Action Item &amp;Tracking Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Credit Memo Lines</source>
+          <target>Geboekte verkoopcreditnotaregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number.</source>
+          <target>Hiermee wordt het documentnummer opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the customer.</source>
+          <target>Hiermee wordt het nummer van de klant opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Sell-to Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line type.</source>
+          <target>Hiermee wordt het regelsoort opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the involved entry or record, according to the specified number series.</source>
+          <target>Hiermee wordt het nummer opgegeven van de betrokken post of record, volgens de opgegeven nummerreeks.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <target>Hiermee wordt de variant opgegeven van het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or general ledger account, or some descriptive text.</source>
+          <target>Hiermee wordt de naam van de artikel- of grootboekrekening, of omschrijvende tekst opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 1, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 1. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Shortcut Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 2, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 2. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Shortcut Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item specified on the line.</source>
+          <target>Hiermee wordt het aantal eenheden opgegeven van het artikel dat op de regel wordt opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 2385270358 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.</source>
+          <target>Hiermee wordt opgegeven hoe elke eenheid van het artikel of de resource wordt gemeten, bijvoorbeeld in stuks of uur. Standaard wordt de waarde in het veld Basiseenheid op de artikel- of resourcekaart ingevoegd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Unit of Measure Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or resource's unit of measure, such as piece or hour.</source>
+          <target>Hiermee wordt naam opgegeven van de maateenheid van het artikel of de resource, zoals stuk of uur.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the price of one unit of the item or resource. You can enter a price manually or have it entered according to the Price/Profit Calculation field on the related card.</source>
+          <target>Hiermee wordt de prijs weergegeven van één eenheid van het artikel of de resource. U kunt handmatig een prijs invoeren of een prijs laten invoeren op basis van het veld Prijs/Winst berekenen op de gerelateerde kaart.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 68186622 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the cost, in LCY, of one unit of the item or resource on the line.</source>
+          <target>Hiermee worden de kosten van één eenheid van het artikel of de resource op de regel weergegeven in de lokale valuta.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Unit Cost (LCY) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line's net amount.</source>
+          <target>Hiermee wordt het nettobedrag van de regel opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1650118938 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the net amount, including VAT, for this line.</source>
+          <target>Hiermee wordt het nettobedrag, inclusief btw, voor deze regel opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Amount Including VAT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 2702998682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the discount percentage that is granted for the item on the line.</source>
+          <target>Hiermee wordt het regelkortingspercentage opgegeven dat voor het artikel op de regel wordt verleend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Line Discount % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1206454073 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the discount amount that is granted for the item on the line.</source>
+          <target>Hiermee wordt het kortingsbedrag opgegeven dat wordt verleend voor het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Line Discount Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 3222158277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the invoice line is included when the invoice discount is calculated.</source>
+          <target>Hiermee wordt opgegeven of de factuurregel wordt opgenomen wanneer de factuurkorting wordt berekend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Allow Invoice Disc. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 907522666 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the total calculated invoice discount amount for the line.</source>
+          <target>Hiermee wordt het totale berekende factuurkortingsbedrag opgegeven voor de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Inv. Discount Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 3244334840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item ledger entry that the document or journal line is applied to.</source>
+          <target>Hiermee wordt het nummer opgegeven van de artikelpost waarmee het document of de dagboekregel wordt vereffend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Appl.-to Item Entry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related job.</source>
+          <target>Hiermee wordt het nummer van het gerelateerde project opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>&amp;Regel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 1107476520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Document</source>
+          <target>Document weergeven</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Show Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 1107476520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the document that the selected line exists on.</source>
+          <target>Het document openen waarin de geselecteerde regel zich bevindt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Show Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensies</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.</source>
+          <target>Dimensies, zoals gebied, project of afdeling, weergeven of bewerken die u kunt toewijzen aan verkoop- en inkoopdocumenten om de kosten te verdelen en de transactiegeschiedenis te analyseren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Dimensions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 1621753147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Lines</source>
+          <target>Artikel&amp;traceringsregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Item &amp;Tracking Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2791175237 - Action 1621753147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit serial numbers and lot numbers that are assigned to the item on the document or journal line.</source>
+          <target>Serienummers en lotnummers weergeven of bewerken die zijn toegewezen aan het artikel op de document- of dagboekregel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Sales Credit Memo Lines - Action Item &amp;Tracking Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Purchase Receipt Lines</source>
+          <target>Geboekte inkoopontvangstregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the receipt number.</source>
+          <target>Hiermee wordt het ontvangstnummer opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 3792369418 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the vendor who delivered the items.</source>
+          <target>Hiermee wordt de naam opgegeven van de leverancier die de artikelen heeft geleverd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Buy-from Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line type.</source>
+          <target>Hiermee wordt het regelsoort opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the involved entry or record, according to the specified number series.</source>
+          <target>Hiermee wordt het nummer opgegeven van de betrokken post of record, volgens de opgegeven nummerreeks.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <target>Hiermee wordt de variant opgegeven van het artikel op de regel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies either the name of or a description of the item or general ledger account.</source>
+          <target>Hiermee wordt de naam of een omschrijving opgegeven van het artikel of de grootboekrekening.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 1, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 1. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Shortcut Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 2, which is one of two global dimension codes that you set up in the General Ledger Setup window.</source>
+          <target>Hiermee wordt de code opgegeven van Shortcutdimensie 2. Dat is een van de twee globale dimensiecodes die u instelt in het venster Boekhoudinstellingen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Shortcut Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the location where the receipt line is registered.</source>
+          <target>Hiermee wordt de code opgegeven van de locatie waar de ontvangstregel is geregistreerd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item specified on the line.</source>
+          <target>Hiermee wordt het aantal eenheden opgegeven van het artikel dat op de regel wordt opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 2385270358 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.</source>
+          <target>Hiermee wordt opgegeven hoe elke eenheid van het artikel of de resource wordt gemeten, bijvoorbeeld in stuks of uur. Standaard wordt de waarde in het veld Basiseenheid op de artikel- of resourcekaart ingevoegd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Unit of Measure Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item or resource's unit of measure, such as piece or hour.</source>
+          <target>Hiermee wordt naam opgegeven van de maateenheid van het artikel of de resource, zoals stuk of uur.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 3244334840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item ledger entry that the document or journal line is applied to.</source>
+          <target>Hiermee wordt het nummer opgegeven van de artikelpost waarmee het document of de dagboekregel wordt vereffend.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Appl.-to Item Entry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related job.</source>
+          <target>Hiermee wordt het nummer van het gerelateerde project opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 851830778 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related production order.</source>
+          <target>Hiermee wordt het nummer van de gerelateerde productieorder opgegeven.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Prod. Order No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 3469770434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date the items were expected.</source>
+          <target>Hiermee wordt de datum opgegeven waarop de artikelen werden verwacht.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Expected Receipt Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Control 61616130 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item on the line have been posted as invoiced.</source>
+          <target>Hiermee wordt opgegeven hoeveel eenheden van het artikel op de regel zijn geboekt als gefactureerd.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Control Quantity Invoiced - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 1402615620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Line</source>
+          <target>&amp;Regel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action &amp;Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 1107476520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Document</source>
+          <target>Document weergeven</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Show Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 1107476520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the document that the selected line exists on.</source>
+          <target>Het document openen waarin de geselecteerde regel zich bevindt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Show Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <target>Dimensies</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.</source>
+          <target>Dimensies, zoals gebied, project of afdeling, weergeven of bewerken die u kunt toewijzen aan verkoop- en inkoopdocumenten om de kosten te verdelen en de transactiegeschiedenis te analyseren.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Dimensions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 1621753147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Lines</source>
+          <target>Artikel&amp;traceringsregels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Item &amp;Tracking Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 461434549 - Action 1621753147 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit serial numbers and lot numbers that are assigned to the item on the document or journal line.</source>
+          <target>Serienummers en lotnummers weergeven of bewerken die zijn toegewezen aan het artikel op de document- of dagboekregel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Purchase Receipt Lines - Action Item &amp;Tracking Lines - Property ToolTip</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

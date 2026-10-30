@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>19469799-b2b4-487d-a9f7-b13072566965</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>3.17459cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.4425cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.46812cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="QtySansScrap">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!QtySansScrap.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>QtySansScrap</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="QtyBesoin">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!QtyBesoin.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>QtyBesoin</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>1.04979cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Desc_ProdOrderComp3">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!Desc_ProdOrderComp.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Desc_ProdOrderComp</rd:DefaultName>
+                          <ZIndex>56</ZIndex>
+                          <Style>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <PaddingRight>5pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=sum(Fields!QtySansScrap.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="QtyBesoin1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=sum(Fields!QtyBesoin.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>QtyBesoin1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="ItemNo_ProdOrderComp">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!ItemNo_ProdOrderComp.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!ItemNo_ProdOrderComp.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>2.5cm</Size>
+                    <CellContents>
+                      <Textbox Name="ItemNo_ProdOrderComp1">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value EvaluationMode="Auto">=Fields!ItemNo_ProdOrderComp.Value</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>ItemNo_ProdOrderComp1</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details" />
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>Before</KeepWithGroup>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Height>1.64979cm</Height>
+            <Width>8.58521cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1.7962cm</Height>
+        <Style />
+      </Body>
+      <Width>8.58521cm</Width>
+      <Page>
+        <PageHeight>10cm</PageHeight>
+        <PageWidth>7cm</PageWidth>
+        <InteractiveHeight>11in</InteractiveHeight>
+        <InteractiveWidth>8.5in</InteractiveWidth>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.15cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="ProdOrderCompDueDateCapt">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ProdOrderCompDueDateCapt</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ProdOrderCompDueDateCapt</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SourceNo_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SourceNo_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SourceNo_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qtyper_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qtyper_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qtyper_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCode_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCode_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCode_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainingQty_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainingQty_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainingQty_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Scrap_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Scrap_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Scrap_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LocationCode_ProdOrderCompCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LocationCode_ProdOrderCompCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LocationCode_ProdOrderCompCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>10</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>ProdOrderCompDueDateCapt</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>SourceNo_ProdOrderCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Qty_ProdOrderCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>ItemNo_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>Desc_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>Qtyper_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>6</RowIndex>
+          <ParameterName>UOMCode_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>7</RowIndex>
+          <ParameterName>RemainingQty_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>8</RowIndex>
+          <ParameterName>Scrap_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>9</RowIndex>
+          <ParameterName>LocationCode_ProdOrderCompCaption</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>f4355aed-d23a-4dff-a00b-d826a436da84</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="ProdOrderTableCaptionFilter">
+          <DataField>ProdOrderTableCaptionFilter</DataField>
+        </Field>
+        <Field Name="No_ProdOrder">
+          <DataField>No_ProdOrder</DataField>
+        </Field>
+        <Field Name="Desc_ProdOrder">
+          <DataField>Desc_ProdOrder</DataField>
+        </Field>
+        <Field Name="SourceNo_ProdOrder">
+          <DataField>SourceNo_ProdOrder</DataField>
+        </Field>
+        <Field Name="Status_ProdOrder">
+          <DataField>Status_ProdOrder</DataField>
+        </Field>
+        <Field Name="Qty_ProdOrder">
+          <DataField>Qty_ProdOrder</DataField>
+        </Field>
+        <Field Name="Qty_ProdOrderFormat">
+          <DataField>Qty_ProdOrderFormat</DataField>
+        </Field>
+        <Field Name="Filter_ProdOrder">
+          <DataField>Filter_ProdOrder</DataField>
+        </Field>
+        <Field Name="ProdOrderMaterialRqstnCapt">
+          <DataField>ProdOrderMaterialRqstnCapt</DataField>
+        </Field>
+        <Field Name="CurrReportPageNoCapt">
+          <DataField>CurrReportPageNoCapt</DataField>
+        </Field>
+        <Field Name="ItemNo_ProdOrderComp">
+          <DataField>ItemNo_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="Desc_ProdOrderComp">
+          <DataField>Desc_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="Qtyper_ProdOrderComp">
+          <DataField>Qtyper_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="Qtyper_ProdOrderCompFormat">
+          <DataField>Qtyper_ProdOrderCompFormat</DataField>
+        </Field>
+        <Field Name="UOMCode_ProdOrderComp">
+          <DataField>UOMCode_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="RemainingQty_ProdOrderComp">
+          <DataField>RemainingQty_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="RemainingQty_ProdOrderCompFormat">
+          <DataField>RemainingQty_ProdOrderCompFormat</DataField>
+        </Field>
+        <Field Name="Scrap_ProdOrderComp">
+          <DataField>Scrap_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="Scrap_ProdOrderCompFormat">
+          <DataField>Scrap_ProdOrderCompFormat</DataField>
+        </Field>
+        <Field Name="DueDate_ProdOrderComp">
+          <DataField>DueDate_ProdOrderComp</DataField>
+        </Field>
+        <Field Name="QtySansScrap">
+          <DataField>QtySansScrap</DataField>
+        </Field>
+        <Field Name="QtySansScrapFormat">
+          <DataField>QtySansScrapFormat</DataField>
+        </Field>
+        <Field Name="QtyBesoin">
+          <DataField>QtyBesoin</DataField>
+        </Field>
+        <Field Name="QtyBesoinFormat">
+          <DataField>QtyBesoinFormat</DataField>
+        </Field>
+        <Field Name="LocationCode_ProdOrderComp">
+          <DataField>LocationCode_ProdOrderComp</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

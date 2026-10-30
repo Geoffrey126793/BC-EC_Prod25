@@ -1,0 +1,31 @@
+{
+  "id": "93a97b72-6d81-4f66-b79d-b36842526846",
+  "name": "EC_Prod",
+  "publisher": "DGIT",
+  "version": "1.0.1.005",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "25.18.48229.0",
+  "application": "25.18.48229.0",
+  "runtime": "14.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 75000
+    },
+    {
+      "from": 8001300,
+      "to": 8001599
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://EC_Prod.com/help/",  
+  "target": "OnPrem",
+  "features": ["TranslationFile"]
+}

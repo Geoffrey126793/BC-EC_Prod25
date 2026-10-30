@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>8367dfe4-de67-4056-898e-e58e5088880e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="list1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>9.3589cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>2.65476cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="list1_Contents">
+                          <ReportItems>
+                            <Tablix Name="table1">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>4.83245cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>2.25cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>2cm</Width>
+                                  </TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.3351cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Header1">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Fields!CompanyAddr_1_.Value + Chr(177) + Fields!CompanyAddr_2_.Value + Chr(177) + Fields!CompanyAddr_3_.Value + Chr(177) + Fields!CompanyAddr_4_.Value + Chr(177) + Fields!CompanyAddr_5_.Value + Chr(177) + Fields!Destination___Delivery_LocationCaption.Value + Chr(177) + Fields!TransferToAddr_1_.Value + Chr(177) + Fields!TransferToAddr_2_.Value + Chr(177) + Fields!TransferToAddr_3_.Value + Chr(177) + Fields!TransferToAddr_4_.Value + Chr(177) + Fields!TransferToAddr_5_.Value + Chr(177) + Fields!TransferToAddr_6_.Value + Chr(177) + Fields!TransferToAddr_7_.Value + Chr(177) + Fields!TransferToAddr_8_.Value + Chr(177) + Fields!Provenance___Loading_PlaceCaption.Value + Chr(177) + Fields!TransferFromAddr_1_.Value + Chr(177) + Fields!TransferFromAddr_2_.Value + Chr(177) + Fields!TransferFromAddr_3_.Value + Chr(177) + Fields!TransferFromAddr_4_.Value + Chr(177) + Fields!TransferFromAddr_5_.Value + Chr(177) + Fields!TransferFromAddr_6_.Value + Chr(177) + Fields!TransferFromAddr_7_.Value + Chr(177) + Fields!Order_dateCaption.Value + Chr(177) + Format(Fields!Transfer_Header___Posting_Date_.Value,"dd/MM/yyyy")  + Chr(177) + Fields!Loading_dateCaption.Value + Chr(177) + Format(Fields!Transfer_Header___Shipment_Date_.Value,"dd/MM/yyyy") + Chr(177) + Fields!STRSUBSTNO_Text001__Transfer_Header___No___.Value + Chr(177) + Fields!Transfer_Header_No_.Value</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox49">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>textbox49</rd:DefaultName>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox4">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>textbox4</rd:DefaultName>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.25cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox32">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>textbox32</rd:DefaultName>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Footer1">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Last(Fields!ShipmentMethod_DescriptionCaption.Value) + Chr(177) + Last(Fields!ShipmentMethod_Description.Value) + Chr(177) + Last(Fields!Produits_frais_sont_transportés_à_une_température_____4_CCaption.Value) + Chr(177) + Last(Fields!Produits_congelés_sont_transportés_à_une_température_____18_CCaption.Value) + Chr(177) + Last(Fields!Vérification_de_l_autorité_vétérinaire___AFSCA_6_H_N_BW_AWECaption.Value)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox46">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>textbox46</rd:DefaultName>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy>
+                                <TablixMembers>
+                                  <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
+                                </TablixMembers>
+                              </TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <KeepWithGroup>After</KeepWithGroup>
+                                    <KeepTogether>true</KeepTogether>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <KeepWithGroup>Before</KeepWithGroup>
+                                    <KeepTogether>true</KeepTogether>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <Height>0.5851cm</Height>
+                              <Width>9.08245cm</Width>
+                              <Style />
+                            </Tablix>
+                            <Tablix Name="table2">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>1.96912cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>5.11333cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>2.27645cm</Width>
+                                  </TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.63492cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Transfer_Line__Item_No__Caption">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=First(Fields!Transfer_Line__Item_No__Caption.Value)</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Transfer_Line__Item_No__Caption</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Style>Solid</Style>
+                                              </LeftBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Transfer_Line_DescriptionCaption">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=First(Fields!Transfer_Line_DescriptionCaption.Value)</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Transfer_Line_DescriptionCaption</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Quantity__Netto___KG_Caption">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=First(Fields!Quantity__Netto___KG_Caption.Value)</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Quantity__Netto___KG_Caption</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.63492cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Transfer_Line__Item_No__">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Fields!Transfer_Line__Item_No__.Value</Value>
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Transfer_Line__Item_No__</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Transfer_Line_Description">
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=First(Fields!Transfer_Line_Description.Value) + " "+First(Fields!Transfer_Line__Vendor_Item_No__.Value)</Value>
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Transfer_Line_Description</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Transfer_Line__Quantity__Base__">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=First(Fields!Transfer_Line__Quantity__Base__.Value)</Value>
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Transfer_Line__Quantity__Base__</rd:DefaultName>
+                                            <Style>
+                                              <TopBorder>
+                                                <Style>Solid</Style>
+                                              </TopBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>0.55cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox35">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>textbox35</rd:DefaultName>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox55">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Fields!STRSUBSTNO_Text50000___Reservation_Entry___Lot_No____Reservation_Entry___Warranty_Date__.Value</Value>
+                                                    <Style>
+                                                      <FontStyle>Italic</FontStyle>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox57">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Fields!Reservation_Entry__Reservation_Entry__Quantity.Value</Value>
+                                                    <Style>
+                                                      <FontStyle>Italic</FontStyle>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy>
+                                <TablixMembers>
+                                  <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
+                                </TablixMembers>
+                              </TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <KeepWithGroup>After</KeepWithGroup>
+                                    <KeepTogether>true</KeepTogether>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <Group Name="table2_Group1">
+                                      <GroupExpressions>
+                                        <GroupExpression>=Fields!Transfer_Line_Line_No_.Value</GroupExpression>
+                                      </GroupExpressions>
+                                    </Group>
+                                    <TablixMembers>
+                                      <TablixMember>
+                                        <KeepWithGroup>After</KeepWithGroup>
+                                        <KeepTogether>true</KeepTogether>
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <Group Name="table2_Group2">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!Reservation_Entry_Entry_No_.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Group>
+                                        <TablixMembers>
+                                          <TablixMember>
+                                            <Visibility>
+                                              <Hidden>= Fields!STRSUBSTNO_Text50000___Reservation_Entry___Lot_No____Reservation_Entry___Warranty_Date__.Value = ""</Hidden>
+                                            </Visibility>
+                                            <KeepTogether>true</KeepTogether>
+                                          </TablixMember>
+                                        </TablixMembers>
+                                      </TablixMember>
+                                    </TablixMembers>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <DataSetName>DataSet_Result</DataSetName>
+                              <Filters>
+                                <Filter>
+                                  <FilterExpression>=Fields!Transfer_Line__Item_No__Caption.Value</FilterExpression>
+                                  <Operator>GreaterThan</Operator>
+                                  <FilterValues>
+                                    <FilterValue>""</FilterValue>
+                                  </FilterValues>
+                                </Filter>
+                              </Filters>
+                              <Top>0.75cm</Top>
+                              <Height>1.81984cm</Height>
+                              <Width>9.3589cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style />
+                            </Tablix>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style />
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="list1_Details_Group">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Transfer_Header_No_.Value</GroupExpression>
+                      <GroupExpression>=Fields!OutputNo.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <DataElementOutput>Output</DataElementOutput>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Height>2.65476cm</Height>
+            <Width>9.3589cm</Width>
+            <Style />
+          </Tablix>
+        </ReportItems>
+        <Height>2.73802cm</Height>
+        <Style />
+      </Body>
+      <Width>9.46955cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>1.38917cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Code.SetData(ReportItems!Header1.Value,1)</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>textbox2</rd:DefaultName>
+              <Left>0.25cm</Left>
+              <Height>0.25cm</Height>
+              <Width>2.53968cm</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox28">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Code.GetData(27,1)</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.42639cm</Top>
+              <Left>0.25cm</Left>
+              <Height>0.75cm</Height>
+              <Width>8.04355cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style />
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageHeader>
+        <PageFooter>
+          <Height>0.02646cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style />
+        </PageFooter>
+        <PageHeight>15cm</PageHeight>
+        <PageWidth>10cm</PageWidth>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+
+Public Shared Data1 as Object
+Shared Data2 as Object
+Shared Data3 as Object
+Shared Data4 as Object
+
+Public Function GetData(Num as Integer, Group as integer) as Object
+if Group = 1 then
+   Return Cstr(Choose(Num, Split(Cstr(Data1),Chr(177))))
+End If
+
+if Group = 2 then
+   Return Cstr(Choose(Num, Split(Cstr(Data2),Chr(177))))
+End If
+
+if Group = 3 then
+   Return Cstr(Choose(Num, Split(Cstr(Data3),Chr(177))))
+End If
+
+if Group = 4 then
+   Return Cstr(Choose(Num, Split(Cstr(Data4),Chr(177))))
+End If
+End Function
+
+Public Function SetData(NewData as Object,Group as integer)
+  If Group = 1 and NewData &gt; "" Then
+      Data1 = NewData
+  End If
+
+  If Group = 2 and NewData &gt; "" Then
+      Data2 = NewData
+  End If
+
+  If Group = 3 and NewData &gt; "" Then
+      Data3 = NewData
+  End If
+
+  If Group = 4 and NewData &gt; "" Then
+      Data4 = NewData
+  End If
+End Function
+</Code>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>340035d3-39e3-4309-a558-27b1a9fb3aa8</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Transfer_Header_No_">
+          <DataField>Transfer_Header_No_</DataField>
+        </Field>
+        <Field Name="OutputNo">
+          <DataField>OutputNo</DataField>
+        </Field>
+        <Field Name="CopyLoop_Number">
+          <DataField>CopyLoop_Number</DataField>
+        </Field>
+        <Field Name="CompanyAddr_1_">
+          <DataField>CompanyAddr_1_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_2_">
+          <DataField>CompanyAddr_2_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_3_">
+          <DataField>CompanyAddr_3_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_4_">
+          <DataField>CompanyAddr_4_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_5_">
+          <DataField>CompanyAddr_5_</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text002_FORMAT_CurrReport_PAGENO__">
+          <DataField>STRSUBSTNO_Text002_FORMAT_CurrReport_PAGENO__</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text001__Transfer_Header___No___">
+          <DataField>STRSUBSTNO_Text001__Transfer_Header___No___</DataField>
+        </Field>
+        <Field Name="TransferToAddr_1_">
+          <DataField>TransferToAddr_1_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_1_">
+          <DataField>TransferFromAddr_1_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_2_">
+          <DataField>TransferToAddr_2_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_2_">
+          <DataField>TransferFromAddr_2_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_3_">
+          <DataField>TransferToAddr_3_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_3_">
+          <DataField>TransferFromAddr_3_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_4_">
+          <DataField>TransferToAddr_4_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_4_">
+          <DataField>TransferFromAddr_4_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_5_">
+          <DataField>TransferToAddr_5_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_6_">
+          <DataField>TransferToAddr_6_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_7_">
+          <DataField>TransferToAddr_7_</DataField>
+        </Field>
+        <Field Name="TransferToAddr_8_">
+          <DataField>TransferToAddr_8_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_5_">
+          <DataField>TransferFromAddr_5_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_6_">
+          <DataField>TransferFromAddr_6_</DataField>
+        </Field>
+        <Field Name="Transfer_Header___Posting_Date_">
+          <DataField>Transfer_Header___Posting_Date_</DataField>
+        </Field>
+        <Field Name="Transfer_Header___Shipment_Date_">
+          <DataField>Transfer_Header___Shipment_Date_</DataField>
+        </Field>
+        <Field Name="TransferFromAddr_7_">
+          <DataField>TransferFromAddr_7_</DataField>
+        </Field>
+        <Field Name="Destination___Delivery_LocationCaption">
+          <DataField>Destination___Delivery_LocationCaption</DataField>
+        </Field>
+        <Field Name="Provenance___Loading_PlaceCaption">
+          <DataField>Provenance___Loading_PlaceCaption</DataField>
+        </Field>
+        <Field Name="Loading_dateCaption">
+          <DataField>Loading_dateCaption</DataField>
+        </Field>
+        <Field Name="Order_dateCaption">
+          <DataField>Order_dateCaption</DataField>
+        </Field>
+        <Field Name="PageLoop_Number">
+          <DataField>PageLoop_Number</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Item_No__">
+          <DataField>Transfer_Line__Item_No__</DataField>
+        </Field>
+        <Field Name="Transfer_Line_Description">
+          <DataField>Transfer_Line_Description</DataField>
+        </Field>
+        <Field Name="Transfer_Line_Quantity">
+          <DataField>Transfer_Line_Quantity</DataField>
+        </Field>
+        <Field Name="Transfer_Line_QuantityFormat">
+          <DataField>Transfer_Line_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Unit_of_Measure_">
+          <DataField>Transfer_Line__Unit_of_Measure_</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Quantity__Base__">
+          <DataField>Transfer_Line__Quantity__Base__</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Quantity__Base__Format">
+          <DataField>Transfer_Line__Quantity__Base__Format</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Vendor_Item_No__">
+          <DataField>Transfer_Line__Vendor_Item_No__</DataField>
+        </Field>
+        <Field Name="ShipmentMethod_Description">
+          <DataField>ShipmentMethod_Description</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Item_No__Caption">
+          <DataField>Transfer_Line__Item_No__Caption</DataField>
+        </Field>
+        <Field Name="Transfer_Line_DescriptionCaption">
+          <DataField>Transfer_Line_DescriptionCaption</DataField>
+        </Field>
+        <Field Name="Transfer_Line_QuantityCaption">
+          <DataField>Transfer_Line_QuantityCaption</DataField>
+        </Field>
+        <Field Name="Transfer_Line__Unit_of_Measure_Caption">
+          <DataField>Transfer_Line__Unit_of_Measure_Caption</DataField>
+        </Field>
+        <Field Name="Quantity__Netto___KG_Caption">
+          <DataField>Quantity__Netto___KG_Caption</DataField>
+        </Field>
+        <Field Name="Vérification_de_l_autorité_vétérinaire___AFSCA_6_H_N_BW_AWECaption">
+          <DataField>Vérification_de_l_autorité_vétérinaire___AFSCA_6_H_N_BW_AWECaption</DataField>
+        </Field>
+        <Field Name="Produits_congelés_sont_transportés_à_une_température_____18_CCaption">
+          <DataField>Produits_congelés_sont_transportés_à_une_température_____18_CCaption</DataField>
+        </Field>
+        <Field Name="Produits_frais_sont_transportés_à_une_température_____4_CCaption">
+          <DataField>Produits_frais_sont_transportés_à_une_température_____4_CCaption</DataField>
+        </Field>
+        <Field Name="ShipmentMethod_DescriptionCaption">
+          <DataField>ShipmentMethod_DescriptionCaption</DataField>
+        </Field>
+        <Field Name="Transfer_Line_Document_No_">
+          <DataField>Transfer_Line_Document_No_</DataField>
+        </Field>
+        <Field Name="Transfer_Line_Line_No_">
+          <DataField>Transfer_Line_Line_No_</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text50000___Reservation_Entry___Lot_No____Reservation_Entry___Warranty_Date__">
+          <DataField>STRSUBSTNO_Text50000___Reservation_Entry___Lot_No____Reservation_Entry___Warranty_Date__</DataField>
+        </Field>
+        <Field Name="Reservation_Entry__Reservation_Entry__Quantity">
+          <DataField>Reservation_Entry__Reservation_Entry__Quantity</DataField>
+        </Field>
+        <Field Name="Reservation_Entry__Reservation_Entry__QuantityFormat">
+          <DataField>Reservation_Entry__Reservation_Entry__QuantityFormat</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Entry_No_">
+          <DataField>Reservation_Entry_Entry_No_</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Positive">
+          <DataField>Reservation_Entry_Positive</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Source_ID">
+          <DataField>Reservation_Entry_Source_ID</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Source_Ref__No_">
+          <DataField>Reservation_Entry_Source_Ref__No_</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Item_No_">
+          <DataField>Reservation_Entry_Item_No_</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Lot_No_">
+          <DataField>Reservation_Entry_Lot_No_</DataField>
+        </Field>
+        <Field Name="Reservation_Entry_Location_Code">
+          <DataField>Reservation_Entry_Location_Code</DataField>
+        </Field>
+        <Field Name="Pallet__SSCC_No__">
+          <DataField>Pallet__SSCC_No__</DataField>
+        </Field>
+        <Field Name="Pallet__Bin_code_">
+          <DataField>Pallet__Bin_code_</DataField>
+        </Field>
+        <Field Name="Pallet__Current_Quantity_">
+          <DataField>Pallet__Current_Quantity_</DataField>
+        </Field>
+        <Field Name="Pallet__Current_Quantity_Format">
+          <DataField>Pallet__Current_Quantity_Format</DataField>
+        </Field>
+        <Field Name="TxtBloque">
+          <DataField>TxtBloque</DataField>
+        </Field>
+        <Field Name="Pallet_Item_No_">
+          <DataField>Pallet_Item_No_</DataField>
+        </Field>
+        <Field Name="Pallet_Lot_No_">
+          <DataField>Pallet_Lot_No_</DataField>
+        </Field>
+        <Field Name="Pallet_Location_code">
+          <DataField>Pallet_Location_code</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text50000__ReservationExpedie__Lot_No___ReservationExpedie__Warranty_Date__">
+          <DataField>STRSUBSTNO_Text50000__ReservationExpedie__Lot_No___ReservationExpedie__Warranty_Date__</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_ReservationExpedie_Quantity">
+          <DataField>ReservationExpedie_ReservationExpedie_Quantity</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_ReservationExpedie_QuantityFormat">
+          <DataField>ReservationExpedie_ReservationExpedie_QuantityFormat</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_Entry_No_">
+          <DataField>ReservationExpedie_Entry_No_</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_Positive">
+          <DataField>ReservationExpedie_Positive</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_Source_ID">
+          <DataField>ReservationExpedie_Source_ID</DataField>
+        </Field>
+        <Field Name="ReservationExpedie_Source_Prod__Order_Line">
+          <DataField>ReservationExpedie_Source_Prod__Order_Line</DataField>
+        </Field>
+        <Field Name="NoteText">
+          <DataField>NoteText</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

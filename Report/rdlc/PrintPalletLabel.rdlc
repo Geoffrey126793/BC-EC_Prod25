@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>9c91618c-02a8-4e32-9bc1-717288a1abe3</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="list1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>9.5cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>15cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="list1_Contents">
+                          <ReportItems>
+                            <Textbox Name="Pallet_SSCC_No_">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">="*"+Fields!Pallet_SSCC_No_.Value+"*"</Value>
+                                      <Style>
+                                        <FontFamily>C39HrP60DlTt</FontFamily>
+                                        <FontSize>90pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet_SSCC_No_</rd:DefaultName>
+                              <Left>5.25cm</Left>
+                              <Height>15cm</Height>
+                              <Width>4.25cm</Width>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Item_No__">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Item_No__.Value</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Item_No__</rd:DefaultName>
+                              <Top>4.75cm</Top>
+                              <Left>4.25cm</Left>
+                              <Height>9.75cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Item_No__Caption">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Item_No__Caption.Value</Value>
+                                      <Style>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Item_No__Caption</rd:DefaultName>
+                              <Top>0.5cm</Top>
+                              <Left>4.25cm</Left>
+                              <Height>3.75cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="RecItem_g_Description">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!RecItem_g_Description.Value</Value>
+                                      <Style>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>RecItem_g_Description</rd:DefaultName>
+                              <Top>0.5cm</Top>
+                              <Left>3.25cm</Left>
+                              <Height>14cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Lot_No__Caption">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Lot_No__Caption.Value</Value>
+                                      <Style>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Lot_No__Caption</rd:DefaultName>
+                              <Top>0.5cm</Top>
+                              <Left>2.25cm</Left>
+                              <Height>4cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Lot_No__">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Lot_No__.Value</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Lot_No__</rd:DefaultName>
+                              <Top>4.75cm</Top>
+                              <Left>2.25cm</Left>
+                              <Height>9.75cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>5</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet_DLCCaption">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet_DLCCaption.Value</Value>
+                                      <Style>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet_DLCCaption</rd:DefaultName>
+                              <Top>0.5cm</Top>
+                              <Left>1cm</Left>
+                              <Height>4cm</Height>
+                              <Width>1.25cm</Width>
+                              <ZIndex>6</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet_DLC">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Format(Fields!Pallet_DLC.Value,"dd/MM/yyyy")</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet_DLC</rd:DefaultName>
+                              <Top>4.75cm</Top>
+                              <Left>1cm</Left>
+                              <Height>5.25cm</Height>
+                              <Width>1.25cm</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="t_Weight">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!t_Weight.Value</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>t_Weight</rd:DefaultName>
+                              <Top>10.5cm</Top>
+                              <Left>1cm</Left>
+                              <Height>4cm</Height>
+                              <Width>1.25cm</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Outbound_Document_No__Caption">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Outbound_Document_No__Caption.Value</Value>
+                                      <Style>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Outbound_Document_No__Caption</rd:DefaultName>
+                              <Top>0.5cm</Top>
+                              <Height>3.25cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>9</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Outbound_Document_No__">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Fields!Pallet__Outbound_Document_No__.Value</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Outbound_Document_No__</rd:DefaultName>
+                              <Top>4.75cm</Top>
+                              <Height>5.5cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>10</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Pallet__Creation_Date_">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value EvaluationMode="Auto">=Format(Fields!Pallet__Creation_Date_.Value,"dd/MM/yyyy")</Value>
+                                      <Style>
+                                        <FontSize>20pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Pallet__Creation_Date_</rd:DefaultName>
+                              <Top>10.5cm</Top>
+                              <Height>4cm</Height>
+                              <Width>1cm</Width>
+                              <ZIndex>11</ZIndex>
+                              <Style>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style />
+                        </Rectangle>
+                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="list1_Details_Group">
+                    <DataElementName>Item</DataElementName>
+                  </Group>
+                  <DataElementName>Item_Collection</DataElementName>
+                  <DataElementOutput>Output</DataElementOutput>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Height>15cm</Height>
+            <Width>9.5cm</Width>
+            <Style />
+          </Tablix>
+        </ReportItems>
+        <Height>15cm</Height>
+        <Style />
+      </Body>
+      <Width>9.5cm</Width>
+      <Page>
+        <PageHeight>15cm</PageHeight>
+        <PageWidth>10cm</PageWidth>
+        <InteractiveHeight>29.7cm</InteractiveHeight>
+        <InteractiveWidth>21cm</InteractiveWidth>
+        <LeftMargin>0.2cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>1bcbfafa-cf2e-41ab-add8-5fb59fa85f01</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="SSCC_No________">
+          <DataField>SSCC_No________</DataField>
+        </Field>
+        <Field Name="Pallet__Item_No__">
+          <DataField>Pallet__Item_No__</DataField>
+        </Field>
+        <Field Name="RecItem_g_Description">
+          <DataField>RecItem_g_Description</DataField>
+        </Field>
+        <Field Name="Pallet__Lot_No__">
+          <DataField>Pallet__Lot_No__</DataField>
+        </Field>
+        <Field Name="Pallet_DLC">
+          <DataField>Pallet_DLC</DataField>
+        </Field>
+        <Field Name="Pallet__Outbound_Document_No__">
+          <DataField>Pallet__Outbound_Document_No__</DataField>
+        </Field>
+        <Field Name="Pallet__Creation_Date_">
+          <DataField>Pallet__Creation_Date_</DataField>
+        </Field>
+        <Field Name="t_Weight">
+          <DataField>t_Weight</DataField>
+        </Field>
+        <Field Name="Pallet__Item_No__Caption">
+          <DataField>Pallet__Item_No__Caption</DataField>
+        </Field>
+        <Field Name="Pallet__Lot_No__Caption">
+          <DataField>Pallet__Lot_No__Caption</DataField>
+        </Field>
+        <Field Name="Pallet_DLCCaption">
+          <DataField>Pallet_DLCCaption</DataField>
+        </Field>
+        <Field Name="Pallet__Outbound_Document_No__Caption">
+          <DataField>Pallet__Outbound_Document_No__Caption</DataField>
+        </Field>
+        <Field Name="Pallet_SSCC_No_">
+          <DataField>Pallet_SSCC_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

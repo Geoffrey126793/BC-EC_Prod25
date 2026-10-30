@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",          
+            "name": "DGIT-EuropaCuisson",
+            //"server": "http://srvnavision.europacuisson.local:12005",
+            "server": "http://192.168.3.42:7049",
+            //"serverInstance": "Test",
+            "serverInstance": "BC252",
+            "authentication": "Windows",
+            "startupObjectId": 27,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true
+        }
+    ]
+}
