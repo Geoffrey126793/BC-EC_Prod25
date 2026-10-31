@@ -400,6 +400,29 @@ pageextension 70088 pageextension70088 extends "Item Card"
                               "Variant Filter" = FIELD("Variant Filter");
             }
         }
+        modify(CopyItem_Promoted)
+        {
+            Visible = false;
+        }
+        modify(AdjustInventory_Promoted)
+        {
+            Visible = false;
+        }
+        modify("&Create Stockkeeping Unit_Promoted")
+        {
+            Visible = false;
+        }
+        modify(ApplyTemplate_Promoted)
+        {
+            Visible = false;
+        }
+        addafter(CopyItem_Promoted)
+        {
+            actionref("Production BOM_PromotedEC"; "Production BOM")
+            { }
+            actionref("Unit of Measure_PromotedEC"; "Unit of Measure")
+            { }
+        }
     }
 
     var

@@ -186,6 +186,18 @@ pageextension 70315 pageextension70315 extends "Customer Card"
     actions
     {
 
+        modify(ApplyTemplate_Promoted)
+        {
+            Visible = false;
+        }
+        modify(MergeDuplicate_Promoted)
+        {
+            Visible = false;
+        }
+        modify(EMail_Promoted)
+        {
+            Visible = false;
+        }
 
         addafter("Co&mments")
         {
@@ -194,8 +206,6 @@ pageextension 70315 pageextension70315 extends "Customer Card"
                 ApplicationArea = Comments;
                 Caption = 'Alerts';
                 Image = ViewComments;
-                Promoted = true;
-                PromotedCategory = Category9;
                 RunObject = Page "Alert List";
                 RunPageLink = "Table Name" = CONST(Customer),
                               "No." = FIELD("No.");
@@ -226,6 +236,10 @@ pageextension 70315 pageextension70315 extends "Customer Card"
         {
             Visible = false;
         }
+        modify("Prices and Discounts Overview")
+        {
+            Visible = false;
+        }
         addafter(PriceLists)
         {
 
@@ -252,6 +266,23 @@ pageextension 70315 pageextension70315 extends "Customer Card"
                 RunPageView = SORTING("Sales Type", "Sales Code");
                 ToolTip = 'View or set up different discounts for items that you sell to the customer. An item discount is automatically granted on invoice lines when the specified criteria are met, such as customer, quantity, or ending date.';
             }
+        }
+        addafter(Email_Promoted)
+        {
+            actionref("Page Sales PricesEC_PromotedEC"; "Page Sales PricesEC")
+            {
+
+            }
+            actionref("Item References_promotedEC"; "Item References")
+            {
+
+            }
+
+            actionref("NewSalesOrder_promotedEC"; "NewSalesOrder")
+            {
+
+            }
+
         }
     }
 

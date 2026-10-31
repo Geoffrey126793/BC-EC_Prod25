@@ -51,19 +51,6 @@ pageextension 70302 pageextension70302 extends "Released Production Order"
         }
         moveafter("Production BOM Version"; "Location Code")
 
-        addafter(Posting)
-        {
-            group(Control1000000007)
-            {
-                Caption = 'Heures';
-                part(Control1000000015; "Heures ABC")
-                {
-                    SubPageLink = "Production No" = FIELD("No.");
-                    SubPageView = WHERE("Operateurs prevu" = FILTER(> 0),
-                                        Imputation = CONST(Direct));
-                }
-            }
-        }
         addafter(Control1905767507)
         {
             part(Control1000000002; "Logs OF Part")
