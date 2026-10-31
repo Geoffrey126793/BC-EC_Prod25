@@ -1,4 +1,4 @@
-tableextension 50016 IntrastatJnlLineEC extends "Intrastat Jnl. Line"
+tableextension 50016 IntrastatJnlLineEC extends "Intrastat Report Line"
 {
     Caption = 'Intrastat Jnl. Line';
 
