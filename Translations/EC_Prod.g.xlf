@@ -26383,11 +26383,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70302 - Control Production BOM Version - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 36293168 - Control 4228025595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3698582500">
-          <source>Heures</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70302 - Control Control1000000007 - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 36293168 - Control 2314935744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3698582500">
           <source>Logs</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -26402,16 +26397,6 @@
           <source>Logs</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70308 - Control Control1000000001 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1018003006 - Action 7285132 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
-          <source>Affichez ou ajoutez des alertes pour l'enregistrement.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70315 - Action Alertes - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1018003006 - Action 7285132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
-          <source>Alerts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70315 - Action Alertes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1018003006 - Action 3336934791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>View or set up different discounts for items that you sell to the customer. An item discount is automatically granted on invoice lines when the specified criteria are met, such as customer, quantity, or ending date.</source>
@@ -26432,6 +26417,16 @@
           <source>Prices</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70315 - Action Page Sales PricesEC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1018003006 - Action 7285132 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Affichez ou ajoutez des alertes pour l'enregistrement.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70315 - Action Alertes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1018003006 - Action 7285132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Alerts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension70315 - Action Alertes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1018003006 - Control 2381758967 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Intervalle habituel de commande (en semaines)</source>
@@ -27067,6 +27062,41 @@
           <source>Vendor Resp Center</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension IncomingDocumentEC - Field Vendor Resp Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>Intrastat Jnl. Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 3635382470 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>Document No.2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field Document No.2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 3389936378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>Location Code EC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field Location Code EC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 3967593550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>No donneur / preneur ordre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field No donneur / preneur ordre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 2829352214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>No TVA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field No TVA - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 1905137049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>Nom donneur / preneur ordre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field Nom donneur / preneur ordre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3659774094 - Field 3415610903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2113709934">
+          <source>Partner ID EC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension IntrastatJnlLineEC - Field Partner ID EC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3554414165 - Field 2102476634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
           <source>Item Alert on Purch Order/Inv</source>
