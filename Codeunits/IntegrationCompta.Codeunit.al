@@ -8,54 +8,55 @@ codeunit 50025 Integration_Compta
     var
         xLBuf: Record "Excel Buffer" temporary;
 
-    /*
-        [EventSubscriber(ObjectType::Report, 594, 'OnBeforeInsertItemJnlLine', '', false, false)]
-        [Scope('OnPrem')]
-        procedure OnInsertIntrastat(var IntrastatJnlLine: Record "Intrastat Jnl. Line"; ItemLedgerEntry: Record "Item Ledger Entry")
-        var
-            recExp: Record "Sales Shipment Header";
-            recRecept: Record "Purch. Rcpt. Header";
-            recNCV: Record "Sales Cr.Memo Header";
-            recSalesH: Record "Sales Invoice Header";
-            recPurchH: Record "Purch. Inv. Header";
-        begin
-
-            if IntrastatJnlLine.Type = IntrastatJnlLine.Type::Shipment then begin
-                if recExp.Get(IntrastatJnlLine."Document No.") then begin
-                    IntrastatJnlLine."No donneur / preneur ordre" := recExp."Sell-to Customer No.";
-                    IntrastatJnlLine."Nom donneur / preneur ordre" := recExp."Bill-to Name";
-                    IntrastatJnlLine."No TVA" := recExp."VAT Registration No.";
-                    recSalesH.Reset;
-                    recSalesH.SetRange("Order No.", recExp."Order No.");
-                    if recSalesH.FindFirst then
-                        IntrastatJnlLine."Document No.2" := recSalesH."No.";
-
-                end;
-            end
-            else begin
-                if recRecept.Get(IntrastatJnlLine."Document No.") then begin
-                    IntrastatJnlLine."No donneur / preneur ordre" := recRecept."Pay-to Vendor No.";
-                    IntrastatJnlLine."Nom donneur / preneur ordre" := recRecept."Pay-to Name";
-                    IntrastatJnlLine."No TVA" := recRecept."VAT Registration No.";
-                    recPurchH.Reset;
-                    recPurchH.SetRange("Order No.", recRecept."Order No.");
-                    if recPurchH.FindFirst then
-                        IntrastatJnlLine."Document No.2" := recPurchH."No.";
 
 
-                end;
-            end;
-            if ItemLedgerEntry."Document Type" = ItemLedgerEntry."Document Type"::"Sales Credit Memo" then begin
-                if recNCV.Get(IntrastatJnlLine."Document No.") then begin
-                    IntrastatJnlLine."No donneur / preneur ordre" := recNCV."Bill-to Customer No.";
-                    IntrastatJnlLine."Nom donneur / preneur ordre" := recNCV."Bill-to Name";
-                    IntrastatJnlLine."No TVA" := recNCV."VAT Registration No.";
-                    IntrastatJnlLine."Document No.2" := recNCV."No.";
-                end;
+    [EventSubscriber(ObjectType::Report, Report::"Intrastat Report Get Lines", OnBeforeInsertItemLedgerLineCall, '', false, false)]
+    local procedure "Intrastat Report Get Lines_OnBeforeInsertItemLedgerLineCall"(var Sender: Report "Intrastat Report Get Lines"; IntrastatReportHeader: Record "Intrastat Report Header"; var IntrastatReportLine: Record "Intrastat Report Line"; var ValueEntry: Record "Value Entry"; var ItemLedgerEntry: Record "Item Ledger Entry"; var IsHandled: Boolean)
+    var
+        recExp: Record "Sales Shipment Header";
+        recRecept: Record "Purch. Rcpt. Header";
+        recNCV: Record "Sales Cr.Memo Header";
+        recSalesH: Record "Sales Invoice Header";
+        recPurchH: Record "Purch. Inv. Header";
+    begin
+
+        if IntrastatReportLine.Type = Enum::Microsoft.Inventory.Intrastat."Intrastat Report Line Type"::Shipment then begin
+            if recExp.Get(IntrastatReportLine."Document No.") then begin
+                IntrastatReportLine."No donneur / preneur ordre" := recExp."Sell-to Customer No.";
+                IntrastatReportLine."Nom donneur / preneur ordre" := recExp."Bill-to Name";
+                IntrastatReportLine."No TVA" := recExp."VAT Registration No.";
+                recSalesH.Reset;
+                recSalesH.SetRange("Order No.", recExp."Order No.");
+                if recSalesH.FindFirst then
+                    IntrastatReportLine."Document No.2" := recSalesH."No.";
+                IntrastatReportLine.Modify();
 
             end;
         end;
-    */
+        if IntrastatReportLine.Type = Enum::Microsoft.Inventory.Intrastat."Intrastat Report Line Type"::Receipt then begin
+            if recRecept.Get(IntrastatReportLine."Document No.") then begin
+                IntrastatReportLine."No donneur / preneur ordre" := recRecept."Pay-to Vendor No.";
+                IntrastatReportLine."Nom donneur / preneur ordre" := recRecept."Pay-to Name";
+                IntrastatReportLine."No TVA" := recRecept."VAT Registration No.";
+                recPurchH.Reset;
+                recPurchH.SetRange("Order No.", recRecept."Order No.");
+                if recPurchH.FindFirst then
+                    IntrastatReportLine."Document No.2" := recPurchH."No.";
+                IntrastatReportLine.Modify();
+            end;
+        end;
+        if ItemLedgerEntry."Document Type" = ItemLedgerEntry."Document Type"::"Sales Credit Memo" then begin
+            if recNCV.Get(IntrastatReportLine."Document No.") then begin
+                IntrastatReportLine."No donneur / preneur ordre" := recNCV."Bill-to Customer No.";
+                IntrastatReportLine."Nom donneur / preneur ordre" := recNCV."Bill-to Name";
+                IntrastatReportLine."No TVA" := recNCV."VAT Registration No.";
+                IntrastatReportLine."Document No.2" := recNCV."No.";
+                IntrastatReportLine.Modify();
+            end;
+
+        end;
+    end;
+
     [EventSubscriber(ObjectType::Codeunit, 2000042, 'OnTransferCodBankStmtLinesOnBeforeInitGenJnlLine', '', false, false)]
     local procedure CU2000042_OnTransferCodBankStmtLinesOnBeforeInitGenJnlLine(CODAStatementLine: Record "CODA Statement Line")
     var
