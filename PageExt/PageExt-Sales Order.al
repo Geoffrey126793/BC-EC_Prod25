@@ -2,6 +2,14 @@ pageextension 70106 pageextension70106 extends "Sales Order"
 {
     layout
     {
+        modify("VAT Reporting Date")
+        {
+            Visible = false;
+        }
+        modify("Control1900201301")  //Prepaiement
+        {
+            Visible = false;
+        }
         modify(control4)
         {
             Visible = true;
@@ -229,22 +237,7 @@ pageextension 70106 pageextension70106 extends "Sales Order"
     }
     actions
     {
-        modify("S&hipments")
-        {
-            Promoted = True;
-            PromotedIsBig = true;
-        }
-        modify("Pla&nning")
-        {
-            Promoted = true;
-            PromotedIsBig = true;
-            PromotedCategory = Process;
-        }
-        modify("Work Order")
-        {
-            Promoted = true;
-            PromotedCategory = "Report";
-        }
+
         addafter(Reopen)
         {
             action("Actualiser crédit")
@@ -294,9 +287,7 @@ pageextension 70106 pageextension70106 extends "Sales Order"
             action("Fiches palettes expédition")
             {
                 Caption = 'Fiches palettes expédition';
-                Promoted = true;
-                PromotedCategory = "Report";
-                PromotedIsBig = true;
+
 
                 trigger OnAction()
                 var
@@ -348,8 +339,7 @@ pageextension 70106 pageextension70106 extends "Sales Order"
             action("Préparation de commande")
             {
                 Caption = 'Préparation de commande';
-                Promoted = true;
-                PromotedCategory = "Report";
+
 
                 trigger OnAction()
                 var
@@ -371,9 +361,7 @@ pageextension 70106 pageextension70106 extends "Sales Order"
             action("Calcul transport")
             {
                 Caption = 'Calcul transport';
-                Promoted = true;
-                PromotedCategory = Category5;
-                PromotedIsBig = true;
+
 
                 trigger OnAction()
                 var
@@ -420,14 +408,43 @@ pageextension 70106 pageextension70106 extends "Sales Order"
             action("Départ du camion")
             {
                 Caption = 'Départ du camion';
-                Promoted = true;
-                PromotedCategory = Category6;
 
                 trigger OnAction()
                 begin
                     "Camion parti" := true;
                     Modify;
                 end;
+            }
+        }
+        modify(PostAndSend_Promoted)
+        {
+            visible = false;
+        }
+        modify(PreviewPosting_Promoted)
+        {
+            visible = false;
+        }
+        modify(PostAndNew_Promoted)
+        {
+            visible = false;
+        }
+        modify("Create &Warehouse Shipment_Promoted")
+        {
+            visible = false;
+        }
+        modify("Create Inventor&y Put-away/Pick_Promoted")
+        {
+            visible = false;
+        }
+        modify("Archive Document_Promoted")
+        {
+            visible = false;
+        }
+        addafter("Archive Document_Promoted")
+        {
+            actionref("Fiches palettes expédition_promotedEC"; "Fiches palettes expédition")
+            {
+
             }
         }
     }
