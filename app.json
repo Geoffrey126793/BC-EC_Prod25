@@ -2,7 +2,7 @@
   "id": "93a97b72-6d81-4f66-b79d-b36842526846",
   "name": "EC_Prod",
   "publisher": "DGIT",
-  "version": "1.0.1.007",
+  "version": "1.0.1.012",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -10,6 +10,11 @@
   "help": "",
   "url": "",
   "logo": "",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+ },
   "dependencies": [
     {
         "id" : "70912191-3c4c-49fc-a1de-bc6ea1ac9da6",
