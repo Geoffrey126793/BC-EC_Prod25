@@ -608,7 +608,11 @@ codeunit 50035 "GS1 Send"
         Cust: Record Customer;
     begin
         Cust.Get(ShptH."Sell-to Customer No.");
-        exit('NAD+BY+' + Cust."GLN EC" + '::9''');
+        IF Cust."GLN EC" <> '' THEN
+            EXIT('NAD+BY+' + Cust."GLN EC" + '::9''')
+        ELSE
+            EXIT('NAD+BY+' + Cust.GLN + '::9''');
+
     end;
 
     [Scope('OnPrem')]

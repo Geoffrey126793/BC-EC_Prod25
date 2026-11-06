@@ -308,17 +308,9 @@ codeunit 50032 "Stats OF"
                             end
                             else begin
                                 //MESSAGE('conso   %1  %2',ItemLedg."Entry No.", ItemLedg.Quantity);
-                                CoutTotal := CoutTotal + AddConsommation(ItemLedg, Level, ItemLedg.Quantity / ItemLedg.Quantity * Quantite / ProdTotal, CruTrouve);
-
-                                if (ItemLedg.Quantity > 0) then begin
-                                    Items2.Get(ItemLedg."Item No.");
-                                    //IF Items2.IsMfgItem THEN
-                                    //BEGIN
-                                    //  MESSAGE('*********** %1',ItemLedg."Entry No.");
-                                    //  ItemLedg.Quantity := -ItemLedg.Quantity;
-                                    //  AddIntermediaire(ItemLedg,Level,-Quantite/ProdTotal);
-                                    //END;
-                                end;
+                                IF (ItemLedg.Quantity < 0) THEN BEGIN //DG031126 on ne prend pas les conso annul‚e, donc pas non plus l'annulation
+                                    CoutTotal := CoutTotal + AddConsommation(ItemLedg, Level, ItemLedg.Quantity / ItemLedg.Quantity * Quantite / ProdTotal, CruTrouve);
+                                END;
                             end;
                         end;//Annule
                     until ItemLedg.Next = 0;

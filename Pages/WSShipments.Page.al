@@ -2,8 +2,8 @@ page 50028 "WS Shipments"
 {
     PageType = List;
     SourceTable = "Sales Shipment Line";
-    SourceTableView = WHERE ("Posting Date" = FILTER (> 20230101D),
-                            "Location Code" = FILTER (<> 'RD'));
+    SourceTableView = WHERE("Posting Date" = FILTER(> 20230101D),
+                            "Location Code" = FILTER(<> 'RD'));
 
     layout
     {
@@ -43,6 +43,10 @@ page 50028 "WS Shipments"
                 }
                 field("Quantity (Base)"; "Quantity (Base)")
                 {
+                }
+                field("Location Code"; "Location Code")
+                {
+
                 }
             }
         }

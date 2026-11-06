@@ -1949,6 +1949,8 @@ codeunit 50045 "Integration Tft and Prod"
         Pal: Record Pallet;
         NewPal: Record Pallet;
         i: Integer;
+        ile: Record "Item Ledger Entry";
+        Qty: Decimal;
     begin
 
         Pal.Reset;
@@ -1976,21 +1978,48 @@ codeunit 50045 "Integration Tft and Prod"
                 until PaletEntry.Next = 0;
             end
             else begin
-                ShptL.Reset;
-                ShptL.SetRange("Document No.", No);
-                ShptL.SetRange(Type, ShptL.Type::Item);
-                if ShptL.FindSet then
-                    repeat
-                        NewPal.Init;
-                        Items.Get(ShptL."No.");
-                        NewPal.Validate("Item No.", ShptL."No.");
-                        NewPal."Quantite reception" := ShptL.Quantity;
-                        calcBacs(Items, NewPal);
-                        NewPal."SSCC No." := '';
-                        NewPal."Outbound Document No." := No;
-                        NewPal.Type := NewPal.Type::Expedition;
-                        NewPal.Insert(true);
-                    until ShptL.Next = 0;
+                ShptL.RESET;
+                ShptL.SETRANGE("Document No.", No);
+                ShptL.SETRANGE(Type, ShptL.Type::Item);
+                IF ShptL.FINDSET THEN
+                    REPEAT
+                        Items.GET(ShptL."No.");
+                        ile.RESET;
+                        ile.SETRANGE("Document No.", No);
+                        ile.SETRANGE("Document Line No.", ShptL."Line No.");
+                        IF ile.FINDSET THEN
+                            REPEAT
+                                Qty := -ile.Quantity;
+                                IF Items.PoidsPalette > 0 THEN
+                                    WHILE (Qty > Items.PoidsPalette) DO BEGIN
+                                        NewPal.INIT;
+                                        NewPal.VALIDATE("Item No.", ShptL."No.");
+                                        NewPal."Quantite reception" := Items.PoidsPalette;
+                                        calcBacs(Items, NewPal);
+                                        NewPal."SSCC No." := '';
+                                        NewPal."Lot No." := ile."Lot No.";
+                                        NewPal.DLC := ile."Warranty Date";
+                                        NewPal."Outbound Document No." := No;
+                                        NewPal.Type := NewPal.Type::Expedition;
+                                        NewPal.INSERT(TRUE);
+                                        Qty := Qty - Items.PoidsPalette;
+                                    END;
+                                IF Qty > 0 THEN BEGIN
+                                    NewPal.INIT;
+                                    NewPal.VALIDATE("Item No.", ShptL."No.");
+                                    NewPal."Quantite reception" := Qty;
+                                    calcBacs(Items, NewPal);
+                                    NewPal."SSCC No." := '';
+                                    NewPal."Lot No." := ile."Lot No.";
+                                    NewPal.DLC := ile."Warranty Date";
+                                    NewPal."Outbound Document No." := No;
+                                    NewPal.Type := NewPal.Type::Expedition;
+                                    NewPal.INSERT(TRUE);
+                                END;
+                            UNTIL ile.NEXT = 0;
+                    UNTIL ShptL.NEXT = 0;
+
+
 
             end;
 

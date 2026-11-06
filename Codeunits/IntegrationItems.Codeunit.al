@@ -156,7 +156,16 @@ codeunit 50046 Integration_Items
     var
         T5405: Record "Production Order";
         cuVP: Codeunit "Call WS";
+        SalesL: Record "Sales Line";
     begin
+        IF (Rec.Blocked) THEN BEGIN
+            SalesL.RESET;
+            SalesL.SETRANGE("No.", Rec."No.");
+            SalesL.SETFILTER("Location Code", '<>RD');
+            IF SalesL.FINDFIRST THEN
+                ERROR('L''article %1 est encore pr‚sent sur des commandes %2', Rec."No.", SalesL."Document No.");
+        END;
+
         if (Rec.Blocked <> xRec.Blocked) then begin
             emailmsg.Create(
             'g.dangremont@europacuisson.com;t.massage@europacuisson.com', 'Modification article',
@@ -211,6 +220,7 @@ codeunit 50046 Integration_Items
         mFile: File;
         TempBlob: Codeunit "Temp Blob";
         InStr: InStream;
+        qtyAdd: decimal;
     begin
         emailmsg.Create('g.dangremont@europacuisson.com;t.hardy@europacuisson.com;YannFoucray@europacuisson.com;Cherazade.Mazari@europacuisson.com;Encoder2@europacuisson.com;Nabil.Aissal@europacuisson.com;Zerouali.Abdeltif@europacuisson.com', 'Stock minimum', '', true);
         //smtp.CreateMessage('Xerox@europacuisson.com','Xerox@europacuisson.com','g.dangremont@europacuisson.com','Stock minimum','',TRUE);
@@ -249,7 +259,12 @@ codeunit 50046 Integration_Items
                         xl.AddColumn(Items."Reorder Quantity", false, '', false, false, false, '', xl."Cell Type"::Number);
                         xl.AddColumn(0, false, '', false, false, false, '', xl."Cell Type"::Number);
                         xl.AddColumn(CalcStock.getIntermediaireNo(Items), false, '', false, false, false, '', xl."Cell Type"::Number);
-                        emailmsg.AppendToBody(Items."No." + '&nbsp;&nbsp;&nbsp;&nbsp;Dispo&nbsp;:&nbsp;' + Format(Dispo) + '&nbsp;Min&nbsp;:&nbsp;' + Format(Items."Reorder Point") + '&nbsp;&nbsp;&nbsp;&nbsp;Reappro standard&nbsp;:&nbsp;' + Format(Items."Reorder Quantity") + '&nbsp;&nbsp;&nbsp;&nbsp' + CalcStock.getIntermediaireNo(Items) + '</BR>');
+                        qtyAdd := Items."Reorder Point" - Dispo;
+                        IF (Items."Reorder Quantity" > qtyAdd) THEN
+                            qtyAdd := Items."Reorder Quantity";
+                        emailmsg.AppendToBody(Items."No." + '&nbsp;&nbsp;&nbsp;&nbsp;Dispo&nbsp;:&nbsp;' + FORMAT(Dispo) + '&nbsp;Min&nbsp;:&nbsp;' + FORMAT(Items."Reorder Point") + '&nbsp;&nbsp;&nbsp;&nbsp;Reappro standard&nbsp;:&nbsp;' + FORMAT(Items."Reorder Quantity") + '&nbsp;&nbsp;&nbsp;&nbsp;' + CalcStock.getIntermediaireNo(Items) + '&nbsp;&nbsp;&nbsp;&nbsp;A produire : ' + FORMAT(qtyAdd) + '</BR>');
+
+
                         i += 1;
                     end;
                 end;

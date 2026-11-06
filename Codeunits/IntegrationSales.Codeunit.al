@@ -143,7 +143,7 @@ codeunit 50048 Integration_Sales
                 'Livraison validée', true);
                 emailsend.Send(emailmsg, enum::"Email Scenario"::Default);
             end;
-            if ((SalesHeader."Sell-to Customer No." = 'C02880') or (SalesHeader."Sell-to Customer No." = 'C00335') or (SalesHeader."Sell-to Customer No." = 'C03561') or (SalesHeader."Sell-to Customer No." = 'C02369') or (SalesHeader."Sell-to Customer No." = 'C03762') or (SalesHeader."Sell-to Customer No." = 'C02916') or (SalesHeader."Sell-to Customer No." = 'C03948') or (SalesHeader."Sell-to Customer No." = 'C03975')) then begin
+            if ((SalesHeader."Sell-to Customer No." = 'C03998') OR (SalesHeader."Sell-to Customer No." = 'C02880') or (SalesHeader."Sell-to Customer No." = 'C00335') or (SalesHeader."Sell-to Customer No." = 'C03561') or (SalesHeader."Sell-to Customer No." = 'C02369') or (SalesHeader."Sell-to Customer No." = 'C03762') or (SalesHeader."Sell-to Customer No." = 'C02916') or (SalesHeader."Sell-to Customer No." = 'C03948') or (SalesHeader."Sell-to Customer No." = 'C03975')) then begin
                 emailmsg.Create(
                 'Sarra.Louifi@europacuisson.com;sales-benelux@europacuisson.com', 'Livraison n°' + SalesShptHdrNo + 'pour client ' + SalesHeader."Sell-to Customer Name",
                 'Livraison validée', true);

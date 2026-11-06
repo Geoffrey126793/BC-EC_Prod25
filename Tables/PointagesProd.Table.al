@@ -58,7 +58,7 @@ table 50037 PointagesProd
         }
         field(9; ActiviteRegroupDesc; Text[50])
         {
-            CalcFormula = Lookup ("ABC - Activites".Description WHERE (Code = FIELD (ActiviteRegroup)));
+            CalcFormula = Lookup("ABC - Activites".Description WHERE(Code = FIELD(ActiviteRegroup)));
             FieldClass = FlowField;
         }
         field(10; Comment; Text[80])
@@ -67,7 +67,7 @@ table 50037 PointagesProd
         }
         field(11; NomSalarie; Code[250])
         {
-            CalcFormula = Lookup (Employee."Search Name" WHERE ("No." = FIELD (Salarie)));
+            CalcFormula = Lookup(Employee."Search Name" WHERE("No." = FIELD(Salarie)));
             FieldClass = FlowField;
         }
         field(12; Minutes; Integer)
@@ -145,5 +145,13 @@ table 50037 PointagesProd
                 ID := 1;
         end;
     end;
+
+    trigger OnModify()
+    begin
+        if ((ActiviteRegroup = 'R999') AND (DtFin <> 0DT)) then begin
+            "Interruption machine" := ROUND((DtFin - DtDebut) / 60000, 1, '=') / 60;
+        end;
+    end;
+
 }
 

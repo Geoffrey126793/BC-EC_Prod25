@@ -1096,6 +1096,9 @@ codeunit 50026 "WS Scan"
             Error('La palette n''est pas au congélateur');
 
         Pallet.CalcFields("Current Quantity");
+        IF ABS(Pallet."Current Quantity" - NewQuantity) > 1500 THEN
+            ERROR('Quantité impossible');
+
         if Pallet."Bin code" = '' then begin
             Pallet."Bin code" := 'RECPROD3';
             Pallet.Modify;

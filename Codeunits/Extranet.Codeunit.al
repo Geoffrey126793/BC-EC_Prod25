@@ -105,5 +105,32 @@ codeunit 50005 Extranet
 
         end;
     end;
+
+    procedure CreateXMLInvoice(No: Code[20]; CustNo: Code[20]);
+    VAR
+        SalesH: Record 112;
+        SalesCr: Record 114;
+        EInvoic: Codeunit 50003;
+        Path: Text;
+    BEGIN
+        Path := '\\192.168.5.42\NavisionTemp\Extranet\' + COMPANYNAME + No + '.xml';
+        IF NOT FILE.EXISTS(Path) THEN BEGIN
+            SalesCr.RESET;
+            SalesCr.SETFILTER("No.", '%1', No);
+            SalesCr.SETFILTER("Sell-to Customer No.", CustNo);
+            IF SalesCr.FINDFIRST THEN BEGIN
+                FILE.COPY(EInvoic.SaveCRPeppolFile(SalesCr), Path);
+            END;
+            SalesH.RESET;
+            SalesH.SETFILTER("No.", '%1', No);
+            SalesH.SETFILTER("Sell-to Customer No.", CustNo);
+            IF SalesH.FINDFIRST THEN BEGIN
+                FILE.COPY(EInvoic.SaveInvoicePeppolFile(SalesH), Path);
+
+            END;
+        END;
+    END;
+
+
 }
 

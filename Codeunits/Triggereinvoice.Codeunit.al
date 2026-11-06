@@ -10,8 +10,8 @@ codeunit 50003 Trigger_einvoice
 
         //CheckInbox();
 
-        SalesH.Get('NCV-E26-0116');
-        GetCRPeppolFile(SalesH);
+        //SalesH.Get('NCV-E26-0116');
+        //GetCRPeppolFile(SalesH);
 
         //CheckBabelwayStatus();
         Message('ok');
@@ -508,10 +508,13 @@ codeunit 50003 Trigger_einvoice
                 FilePath,
                 TempBlob);
 
-            InDoc.Reset;
-            if InDoc.Get(IncomingDoc."Incoming Document Entry No.") then
-                //GetAttachedInvoiceFromIncomingDocumentPath(InDoc,'\\srvnavision\NavisionTemp\EINVOICE\Files\' + TextMgmt.Replace(InDoc."Vendor Name" + '-' + InDoc."Vendor Invoice No.",'\','_') + '____' + FORMAT(CREATEGUID) +  '.pdf');
-                GetAttachedInvoiceFromIncomingDocumentPath(InDoc, '\\srvnavision\NavisionTemp\EINVOICE\Files\' + (InDoc."Vendor Name" + '-' + InDoc."Vendor Invoice No.").Replace('\', '_').Replace('/', '_') + '____' + Format(CreateGuid) + '.pdf');
+            IF InDoc.GET(IncomingDoc."Incoming Document Entry No.") THEN BEGIN
+                IF STRPOS(UPPERCASE(COMPANYNAME), 'EUROPACUISSON') > 1 THEN
+                    GetAttachedInvoiceFromIncomingDocumentPath(InDoc, '\\srvnavision\NavisionTemp\EINVOICE\Files\' + (InDoc."Vendor Name" + '-' + InDoc."Vendor Invoice No.").Replace('\', '_').Replace('/', '_') + '____' + FORMAT(CREATEGUID) + '.pdf')
+                ELSE
+                    GetAttachedInvoiceFromIncomingDocumentPath(InDoc, '\\srvnavision\NavisionTemp\EINVOICE\Files\' + (COMPANYNAME + InDoc."Vendor Name" + '-' + InDoc."Vendor Invoice No.").Replace('\', '_').Replace('/', '_') + '____' + FORMAT(CREATEGUID) + '.pdf')
+
+            END;
 
             FILE.Erase(NewFilePath);
             FILE.Copy(FilePath, FilePath.Replace('Received', 'Treated'));
@@ -748,7 +751,7 @@ codeunit 50003 Trigger_einvoice
                         end;
                     end;
                 end;
-            SalesHeader."Document Type"::"Credit Memo":
+            SalesHeader."Document Type"::"Credit Memo", SalesHeader."Document Type"::"Return Order":
                 begin
                     SalesCrH.Reset;
                     if (SalesCrH.Get(SalesCrMemoHdrNo)) then begin
