@@ -22,6 +22,10 @@ query 50088 CustomersPBI
             {
 
             }
+            column(Customer_Posting_Group;"Customer Posting Group")
+            {
+                
+            }
         }
     }
 
