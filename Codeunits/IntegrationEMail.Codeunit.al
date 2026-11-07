@@ -74,10 +74,13 @@ codeunit 50038 Integration_EMail
                         FileMgt.BLOBImportFromServerFile(TempBlob, TempFile);
                         TempBlob.CreateInStream(InStr);
                         emailmsg.AddAttachment('CDA.csv', 'text/csv', InStr);
-                        emailsend.Send(emailmsg, Enum::"Email Scenario"::Default);
+                        emailsend.Send(emailmsg, Enum::"Email Scenario"::Transport);
                     end;
         end;
     end;
+
+
+
 
     [EventSubscriber(ObjectType::Table, 77, 'OnBeforeGetCustEmailAddress', '', false, false)]
     local procedure T77_OnBeforeGetCustEMail(BillToCustomerNo: Code[20]; var ToAddress: Text; ReportUsage: Option; var IsHandled: Boolean)

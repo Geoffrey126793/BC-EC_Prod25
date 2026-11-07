@@ -1256,7 +1256,7 @@ codeunit 50026 "WS Scan"
                                             emailmsg.AddAttachment('desadv.pdf', 'application/pdf', InS);
                                         end;
 
-                                        emailsend.Send(emailmsg, Enum::"Email Scenario"::Default);
+                                        emailsend.Send(emailmsg, Enum::"Email Scenario"::EDI);
                                     end;
                                 end;
                             end;
@@ -1278,7 +1278,7 @@ codeunit 50026 "WS Scan"
                         TempBlob.CreateInStream(InS);
                         emailmsg.AddAttachment('Factures a imprimer.pdf', 'application/pdf', InS);
                     end;
-                    emailsend.Send(emailmsg, Enum::"Email Scenario"::Default);
+                    emailsend.Send(emailmsg, Enum::"Email Scenario"::EDI);
                 end;
 
                 //  Vend."Repertoire Send AS2"
@@ -3859,7 +3859,7 @@ codeunit 50026 "WS Scan"
                         until reserv.Next = 0;
                     if qty <> 0 then begin
                         emailmsg.Create('g.dangremont@europacuisson.com;ProdToSales@europacuisson.com', 'Commande validée en production avec différence', 'Commande : ' + No + '   article    : ' + SalesL."No." + ' différence de quantité  ' + Format(SalesL."Quantity (Base)"), false);
-                        emailsend.Send(emailmsg, enum::"Email Scenario"::Default);
+                        emailsend.Send(emailmsg, enum::"Email Scenario"::EDI);
                     end
                     else begin
                         item.Get(SalesL."No.");
@@ -3867,7 +3867,7 @@ codeunit 50026 "WS Scan"
                             item.CalcFields(Inventory);
                             if (item.Inventory > SalesL."Quantity (Base)") then begin
                                 emailmsg.Create('g.dangremont@europacuisson.com;ProdToSales@europacuisson.com', 'Commande validée en production, mais il reste du stock client !!', 'Commande : ' + No + '   article    : ' + SalesL."No." + ' différence de quantité  ' + Format(SalesL."Quantity (Base)"), false);
-                                emailsend.Send(emailmsg, enum::"Email Scenario"::Default);
+                                emailsend.Send(emailmsg, enum::"Email Scenario"::EDI);
                             end;
 
                         end;

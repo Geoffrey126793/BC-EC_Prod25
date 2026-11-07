@@ -44,6 +44,24 @@ codeunit 50048 Integration_Sales
         TempBlob: Codeunit "Temp Blob";
         InStr: InStream;
 
+    local procedure GetEMailScenarioForCustomer(SalesH: record "Sales Header") Scenario: Enum "Email Scenario"
+    var
+        Salarie: Record Employee;
+    begin
+        Scenario := Enum::"Email Scenario"::Default;
+
+        Salarie.RESET;
+        Salarie.SETRANGE("No.", GetReponsableFromSalesH(SalesH));
+        IF NOT Salarie.FINDFIRST THEN ERROR('Vendeur non trouvé');
+
+        if Salarie."Company E-Mail" = 'sales-export@europacuisson.com' THEN exit(Enum::"Email Scenario"::SalesExport);
+        if Salarie."Company E-Mail" = 'sales-benelux@europacuisson.com' THEN exit(Enum::"Email Scenario"::SalesBE);
+        if Salarie."Company E-Mail" = 'sales-france@europacuisson.com' THEN exit(Enum::"Email Scenario"::SalesFR);
+
+
+        exit(Enum::"Email Scenario"::Default);
+    end;
+
     [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterPostSalesDoc', '', false, false)]
     local procedure CU80_OnAfterPostSalesDoc(var SalesHeader: Record "Sales Header"; var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line"; SalesShptHdrNo: Code[20]; RetRcpHdrNo: Code[20]; SalesInvHdrNo: Code[20]; SalesCrMemoHdrNo: Code[20]; CommitIsSuppressed: Boolean; InvtPickPutaway: Boolean)
     var
@@ -167,7 +185,7 @@ codeunit 50048 Integration_Sales
                     end;
 
                 end;
-                emailsend.Send(emailmsg, enum::"Email Scenario"::Default);
+                emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesHeader));
             end;
 
 
@@ -1705,7 +1723,7 @@ codeunit 50048 Integration_Sales
                 TempBlob.CreateInStream(InS);
                 emailmsg.AddAttachment('Credit status.pdf', 'application/pdf', InS);
             end;
-            emailsend.Send(emailmsg, enum::"Email Scenario"::"Sales Order");
+            emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesH));
 
         end;
     end;
@@ -1745,7 +1763,7 @@ codeunit 50048 Integration_Sales
                 TempBlob.CreateInStream(InS);
                 emailmsg.AddAttachment('Credit status.pdf', 'application/pdf', InS);
             end;
-            emailsend.Send(emailmsg, enum::"Email Scenario"::"Sales Order");
+            emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesH));
 
         end;
     end;
