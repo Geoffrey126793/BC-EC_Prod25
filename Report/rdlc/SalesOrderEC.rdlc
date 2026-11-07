@@ -2634,7 +2634,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!RecCompanyInformation_g_Address_________RecCompanyInformation_g__Address_2_.Value + Chr(177) + Fields!RecCompanyInformation_g__Post_Code__________RecCompanyInformation_g_City______RecCompanyInformation_g__Country_Region_Code_.Value + Chr(177) + "" + Chr(177) + Fields!TEL___Caption.Value  + Chr(177) + Fields!RecCompanyInformation_g__Phone_No__.Value   + Chr(177) + Fields!FAX__Caption.Value  + Chr(177) + Fields!RecCompanyInformation_g__Fax_No__.Value  + Chr(177) + Fields!RecCompanyInformation_g__E_Mail_.Value + Chr(177) + Fields!MwSt__Caption.Value + Chr(177) + Fields!BE__RecCompanyInformation_g__Enterprise_No__.Value + Chr(177) + Fields!RecCompanyInformation_g__N__Registre_de_Commerce_.Value  + Chr(177) + Fields!PRODUZENT_VON_GEKOCHTEM_GEFLÜGELFLEISCHCaption_Control1000000021.Value + Chr(177) + Fields!Bank___Caption.Value + Chr(177) + Fields!TxtBankName1_g.Value + Chr(177) + Fields!LabBic1_g.Value  + Chr(177) + Fields!TxtBic1_g.Value  + Chr(177) + Fields!TxtBankName2_g.Value + Chr(177) + Fields!LabBic2_g.Value + Chr(177) + Fields!TxtBic2_g.Value + Chr(177)</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!RecCompanyInformation_g_Address_________RecCompanyInformation_g__Address_2_.Value + Chr(177) + Fields!RecCompanyInformation_g__Post_Code_RecCompanyInformation_g_City_RecCompanyInformation_g__Country_Region_Code_.Value + Chr(177) + "" + Chr(177) + Fields!TEL___Caption.Value  + Chr(177) + Fields!RecCompanyInformation_g__Phone_No__.Value   + Chr(177) + Fields!FAX__Caption.Value  + Chr(177) + Fields!RecCompanyInformation_g__Fax_No__.Value  + Chr(177) + Fields!RecCompanyInformation_g__E_Mail_.Value + Chr(177) + Fields!MwSt__Caption.Value + Chr(177) + Fields!BE__RecCompanyInformation_g__Enterprise_No__.Value + Chr(177) + Fields!RecCompanyInformation_g__N__Registre_de_Commerce_.Value  + Chr(177) + Fields!PRODUZENT_VON_GEKOCHTEM_GEFLÜGELFLEISCHCaption_Control1000000021.Value + Chr(177) + Fields!Bank___Caption.Value + Chr(177) + Fields!TxtBankName1_g.Value + Chr(177) + Fields!LabBic1_g.Value  + Chr(177) + Fields!TxtBic1_g.Value  + Chr(177) + Fields!TxtBankName2_g.Value + Chr(177) + Fields!LabBic2_g.Value + Chr(177) + Fields!TxtBic2_g.Value + Chr(177)</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -4739,8 +4739,8 @@ UB3VQzc5Jyc9TRXjRlJbM9SUU90FFFFSUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
         <Field Name="RecCompanyInformation_g__Phone_No__">
           <DataField>RecCompanyInformation_g__Phone_No__</DataField>
         </Field>
-        <Field Name="DataItem1000000156">
-          <DataField>DataItem1000000156</DataField>
+        <Field Name="RecCompanyInformation_g__Post_Code_RecCompanyInformation_g_City_RecCompanyInformation_g__Country_Region_Code_">
+          <DataField>RecCompanyInformation_g__Post_Code_RecCompanyInformation_g_City_RecCompanyInformation_g__Country_Region_Code_</DataField>
         </Field>
         <Field Name="RecCompanyInformation_g_Address_________RecCompanyInformation_g__Address_2_">
           <DataField>RecCompanyInformation_g_Address_________RecCompanyInformation_g__Address_2_</DataField>

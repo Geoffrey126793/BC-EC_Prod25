@@ -35,7 +35,7 @@ report 50001 "Sales - Order EC"
                 column(RecCompanyInformation_g__Phone_No__; RecCompanyInformation_g."Phone No.")
                 {
                 }
-                column(DataItem1000000156; RecCompanyInformation_g."Post Code" + ' ' + RecCompanyInformation_g.City + '-' + RecCompanyInformation_g."Country/Region Code")
+                column(RecCompanyInformation_g__Post_Code_RecCompanyInformation_g_City_RecCompanyInformation_g__Country_Region_Code_; RecCompanyInformation_g."Post Code" + ' ' + RecCompanyInformation_g.City + '-' + RecCompanyInformation_g."Country/Region Code")
                 {
                 }
                 column(RecCompanyInformation_g_Address_________RecCompanyInformation_g__Address_2_; RecCompanyInformation_g.Address + ' ' + RecCompanyInformation_g."Address 2")
