@@ -1,7 +1,18 @@
 pageextension 70238 pageextension70238 extends "Acc. Receivables Adm. RC"
 {
+    layout
+    {
+        addfirst(rolecenter)
+        {
+            part(AllEC; AllCueEC)
+            {
+                ApplicationArea = All;
+            }
+        }
+    }
     actions
     {
+
         modify("Sales &Credit Memo")
         {
             Visible = false;

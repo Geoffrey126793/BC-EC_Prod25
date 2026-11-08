@@ -1,5 +1,15 @@
 pageextension 70240 pageextension70240 extends "Purchasing Agent Role Center"
 {
+    layout
+    {
+        addfirst(rolecenter)
+        {
+            part(AllEC; AllCueEC)
+            {
+                ApplicationArea = All;
+            }
+        }
+    }
     actions
     {
 

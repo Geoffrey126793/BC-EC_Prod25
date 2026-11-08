@@ -1,7 +1,15 @@
 pageextension 70237 pageextension70237 extends "Accounting Manager Role Center"
 {
+
     layout
     {
+        addfirst(rolecenter)
+        {
+            part(AllEC; AllCueEC)
+            {
+                ApplicationArea = All;
+            }
+        }
         modify(Control100)
         {
             Visible = false;
@@ -68,8 +76,8 @@ pageextension 70237 pageextension70237 extends "Accounting Manager Role Center"
             {
                 Caption = 'Feuilles financières';
                 RunObject = Page "General Journal Batches";
-                RunPageView = WHERE ("Template Type" = CONST ("General"),
-                                    Recurring = CONST (false));
+                RunPageView = WHERE("Template Type" = CONST("General"),
+                                    Recurring = CONST(false));
             }
         }
     }

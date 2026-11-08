@@ -1,5 +1,15 @@
 pageextension 70241 pageextension70241 extends "Shop Supervisor Role Center"
 {
+    layout
+    {
+        addfirst(rolecenter)
+        {
+            part(AllEC; AllCueEC)
+            {
+                ApplicationArea = All;
+            }
+        }
+    }
     actions
     {
         modify("Capacity Tas&k List")
