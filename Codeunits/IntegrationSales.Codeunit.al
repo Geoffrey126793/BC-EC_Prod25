@@ -183,8 +183,8 @@ codeunit 50048 Integration_Sales
                         TempBlob.CreateInStream(InStr);
                         emailmsg.AddAttachment('Expedition.pdf', 'application/pdf', InStr);
                     end;
-
                 end;
+                emailsend.AddRelation(emailmsg, Database::Customer, Cust.SystemId, enum::"Email Relation Type"::"Primary Source", enum::"Email Relation Origin"::"Compose Context");
                 emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesHeader));
             end;
 
@@ -1723,6 +1723,7 @@ codeunit 50048 Integration_Sales
                 TempBlob.CreateInStream(InS);
                 emailmsg.AddAttachment('Credit status.pdf', 'application/pdf', InS);
             end;
+            emailsend.AddRelation(emailmsg, Database::Customer, Cust.SystemId, enum::"Email Relation Type"::"Primary Source", enum::"Email Relation Origin"::"Compose Context");
             emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesH));
 
         end;
@@ -1763,6 +1764,7 @@ codeunit 50048 Integration_Sales
                 TempBlob.CreateInStream(InS);
                 emailmsg.AddAttachment('Credit status.pdf', 'application/pdf', InS);
             end;
+            emailsend.AddRelation(emailmsg, Database::Customer, Cust.SystemId, enum::"Email Relation Type"::"Primary Source", enum::"Email Relation Origin"::"Compose Context");
             emailsend.Send(emailmsg, GetEMailScenarioForCustomer(SalesH));
 
         end;
